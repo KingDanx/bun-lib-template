@@ -1,0 +1,16 @@
+{
+  "name": "bun-lib-template",
+  "module": "models/bun-lib-template.js",
+  "version": "1.0.0",
+  "date": "2025.8.8",
+  "type": "module",
+  "scripts": {
+    "build": "bun ./build/build.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
