@@ -2,8 +2,8 @@
   "name": "bun-lib-template",
   "module": "models/bun-lib-template.js",
   "main": "models/bun-lib-template.js",
-  "version": "1.0.1",
-  "date": "2025.08.11",
+  "version": "1.0.2",
+  "date": "2025.08.15",
   "type": "module",
   "scripts": {
     "build": "bun ./build/build.js"
