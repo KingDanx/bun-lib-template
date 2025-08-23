@@ -1,29 +1,16 @@
 {
   "compilerOptions": {
-    // Environment setup & latest features
-    "lib": ["ESNext"],
     "target": "ESNext",
-    "module": "Preserve",
-    "moduleDetection": "force",
-    "jsx": "react-jsx",
+    "module": "ESNext",
     "allowJs": true,
-
-    // Bundler mode
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true,
-
-    // Best practices
+    "checkJs": true, // required to generate types from JS files with JSDoc
+    "declaration": true, // <-- generate .d.ts
+    "emitDeclarationOnly": true, // <-- only output .d.ts, no JS
+    "outDir": "./types",
     "strict": true,
-    "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-
-    // Some stricter flags (disabled by default)
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false
-  }
+    "moduleResolution": "bundler",
+    "skipLibCheck": true
+  },
+  "include": ["index.js"], // point to your JS source files
+  "exclude": ["node_modules", "tests", "scripts", "build.js"]
 }

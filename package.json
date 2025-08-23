@@ -1,17 +1,19 @@
 {
   "name": "bun-lib-template",
-  "module": "models/bun-lib-template.js",
-  "main": "index.js",
-  "version": "1.0.3",
-  "date": "2025.08.19",
+  "version": "1.0.0",
   "type": "module",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "index.js",
+    "types"
+  ],
+  "date": "2025.08.23",
   "scripts": {
-    "build": "bun ./build/build.js"
+    "build": "npx tsc && bun ./build/build.js"
   },
   "devDependencies": {
+    "typescript": "^5.9.2",
     "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
   }
 }

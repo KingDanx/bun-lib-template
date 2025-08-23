@@ -3,8 +3,12 @@
   "workspaces": {
     "": {
       "name": "bun-lib-template",
+      "dependencies": {
+        "@kingdanx/dap-timer": "^1.0.9",
+      },
       "devDependencies": {
         "@types/bun": "latest",
+        "typescript": "^5.9.2",
       },
       "peerDependencies": {
         "typescript": "^5",
@@ -12,6 +16,8 @@
     },
   },
   "packages": {
+    "@kingdanx/dap-timer": ["@kingdanx/dap-timer@1.0.9", "", {}, "sha512-yCwdIZ5VTZj2rsokI4400A4FA3e/ktbCtIbfIMzmO+q+tsERxH7F2FQajoiriuHLmKaOjm/usNrbcH2UGHHZbA=="],
+
     "@types/bun": ["@types/bun@1.2.19", "", { "dependencies": { "bun-types": "1.2.19" } }, "sha512-d9ZCmrH3CJ2uYKXQIUuZ/pUnTqIvLDS0SK7pFmbx8ma+ziH/FRMoAq5bYpRG7y+w1gl+HgyNZbtqgMq4W4e2Lg=="],
 
     "@types/node": ["@types/node@24.2.0", "", { "dependencies": { "undici-types": "~7.10.0" } }, "sha512-3xyG3pMCq3oYCNg7/ZP+E1ooTaGB4cG8JWRsqqOYQdbWNY4zbaV0Ennrd7stjiJEFZCaybcIgpTjJWHRfBSIDw=="],

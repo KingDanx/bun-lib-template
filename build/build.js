@@ -68,7 +68,7 @@ try {
   const models = await getModels(modelPath);
   const indexPath = path.join(import.meta.dirname, "..");
   const index = await getIndex(indexPath);
-  
+
   await Bun.build({
     entrypoints: [index, ...models],
     outdir: "./dist",
