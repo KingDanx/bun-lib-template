@@ -6,7 +6,8 @@
   "types": "types/index.d.ts",
   "files": [
     "index.js",
-    "types"
+    "types",
+    "models"
   ],
   "date": "2025.08.23",
   "scripts": {
